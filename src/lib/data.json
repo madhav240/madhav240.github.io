@@ -1,0 +1,23 @@
+[
+  {
+    "name": "rilix",
+    "text": "A music platform that provides the best 30-second snippets of any music.",
+    "tags": ["ReactJS", "React Router", "Spotify Web API", "TailwindCSS"],
+    "slideID": "2PACX-1vTkYQTtJlY8oL5qFcKsHyTSTp9lfNuJ3K_PRPET4-OtEf5C3qSKnXso9vxMj4AvuTJqGAE8RjYz13j1",
+    "image": "./images/rilix.png"
+  },
+  {
+    "name": "SOWT",
+    "text": "Create and manage a personalized profile with multiple customizable sections, using templates.",
+    "tags": ["Svelte", "SvelteKit", "MongoDB", "TailwindCSS"],
+    "slideID": "2PACX-1vTBBQOce90Tykl1wqVzhS5uW6ZctPX4r3l7vEF7LSzKSDFksz-Trm9ufL530v47R9K8efJwCkqzSNwo",
+    "image": "./images/sowt.png"
+  },
+  {
+    "name": "Kanha",
+    "text": "A multi page website for one of the 12 houses for IITM BS Degree Students.",
+    "tags": ["Svelte", "SvelteKit", "Figma", "TailwindCSS"],
+    "slideID": "2PACX-1vQrDxt6GVtQeG6sXgrW5AKnl93nCIbraEt9-dDZiV_RUqKRvykGJDyH4tbM2R3NAxuu08nzTRzW0BNt",
+    "image": "./images/kanha.png"
+  }
+]
