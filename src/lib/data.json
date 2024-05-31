@@ -20,8 +20,7 @@
     "text": "A multi page website for one of the 12 houses for IITM BS Degree Students.",
     "tags": ["Svelte", "SvelteKit", "Figma", "TailwindCSS"],
     "slideID": "2PACX-1vQrDxt6GVtQeG6sXgrW5AKnl93nCIbraEt9-dDZiV_RUqKRvykGJDyH4tbM2R3NAxuu08nzTRzW0BNt",
-    "image": "./images/kanha.png",
-    "link": "https://sowt.vercel.app/"
+    "image": "./images/kanha.png"
   },
   {
     "name": "Portfolio",

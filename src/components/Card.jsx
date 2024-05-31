@@ -1,16 +1,23 @@
-import { ExternalLink } from "lucide-react";
+import { ExternalLink, Play } from "lucide-react";
 
 export default function Card({ props, setSelectedCard }) {
   return (
     <>
       <div className="bg-white rounded-md pb-4 shadow-md">
         {props.slideID ? (
-          <img
-            className="md:h-64 sm:w-full p-1 object-cover cursor-pointer"
-            src={props.image}
-            alt=""
-            onClick={() => setSelectedCard(props)}
-          />
+          <>
+            <div className="relative">
+              <img
+                className="md:h-64 sm:w-full p-1 object-cover cursor-pointer"
+                src={props.image}
+                alt=""
+                onClick={() => setSelectedCard(props)}
+              />
+              {/* <span className="absolute bottom-4 right-4 p-2 rounded-full flex flex-row justify-center items-center bg-black/50 backdrop-blur-sm text-white">
+                <Play />
+              </span> */}
+            </div>
+          </>
         ) : (
           <img
             className="md:h-64 sm:w-full p-1 object-cover"
@@ -20,21 +27,30 @@ export default function Card({ props, setSelectedCard }) {
         )}
 
         <div className="p-2">
-          {props.link ? (
-            <a
-              href={props.link}
-              target="_blank"
-              className="flex flex-row items-center w-fit hover:underline"
-            >
-              <span className="text-lg font-bold">{props.name}</span>
+          <div className="flex flex-row items-center">
+            {props.link ? (
+              <a
+                href={props.link}
+                target="_blank"
+                className="flex flex-row items-center w-fit hover:underline"
+              >
+                <span className="text-lg font-bold">{props.name}</span>
 
+                <span>
+                  <ExternalLink className="ml-2 w-4 h-4 text-neutral-600" />
+                </span>
+              </a>
+            ) : (
+              <span className="text-lg font-bold">{props.name}</span>
+            )}
+
+            {props.slideID && (
               <span>
-                <ExternalLink className="ml-2 w-4 h-4" />
+                <Play className="ml-2 w-4 h-4 text-neutral-600 mt-[2px]" />
               </span>
-            </a>
-          ) : (
-            <span className="text-lg font-bold">{props.name}</span>
-          )}
+            )}
+          </div>
+
           <p className="line-clamp-2">{props.text}</p>
           <div className="flex flex-row flex-wrap gap-2 mt-2">
             {props.tags.map((e, id) => (
