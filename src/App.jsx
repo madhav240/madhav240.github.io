@@ -59,13 +59,13 @@ function App() {
         <ProfileCard />
         <div className="grid md:grid-cols-3 gap-x-2 gap-y-4 mt-1 pr-1 pl-14 pb-6 overflow-y-auto h-dvh">
           {data.map((e, id) => (
-            <div
-              key={id}
-              className="cursor-pointer h-fit"
-              onClick={() => setSelectedCard(e)}
-            >
-              <Card props={e} />
-            </div>
+            // <div
+            //   key={id}
+            //   className="cursor-pointer h-fit"
+            //   onClick={() => setSelectedCard(e)}
+            // >
+            <Card props={e} key={id} />
+            // </div>
           ))}
         </div>
       </div>
