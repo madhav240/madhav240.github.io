@@ -13,9 +13,6 @@ export default function Card({ props, setSelectedCard }) {
                 alt=""
                 onClick={() => setSelectedCard(props)}
               />
-              {/* <span className="absolute bottom-4 right-4 p-2 rounded-full flex flex-row justify-center items-center bg-black/50 backdrop-blur-sm text-white">
-                <Play />
-              </span> */}
             </div>
           </>
         ) : (
@@ -27,7 +24,7 @@ export default function Card({ props, setSelectedCard }) {
         )}
 
         <div className="p-2">
-          <div className="flex flex-row items-center">
+          <div className="flex flex-row items-center ">
             {props.link ? (
               <a
                 href={props.link}
@@ -46,7 +43,7 @@ export default function Card({ props, setSelectedCard }) {
 
             {props.slideID && (
               <span>
-                <Play className="ml-2 w-4 h-4 text-neutral-600 mt-[2px]" />
+                <Play className="ml-2 w-4 h-4 text-neutral-600 mt-[1px]" />
               </span>
             )}
           </div>

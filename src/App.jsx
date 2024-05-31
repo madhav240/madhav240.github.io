@@ -1,4 +1,4 @@
-import { Github, Linkedin, Twitter, X } from "lucide-react";
+import { ExternalLink, Github, Linkedin, Twitter, X } from "lucide-react";
 import GoogleSlide from "./components/GoogleSlide";
 import Card from "./components/Card";
 import data from "./lib/data.json";
@@ -59,7 +59,7 @@ function App() {
         <ProfileCard />
         <div className="grid md:grid-cols-3 gap-x-2 gap-y-4 mt-1 pr-1 pl-14 pb-6 overflow-y-auto h-dvh">
           {data.map((e, id) => (
-            <Card props={e} key={id} />
+            <Card props={e} key={id} setSelectedCard={setSelectedCard} />
           ))}
         </div>
       </div>
@@ -71,7 +71,23 @@ function App() {
 
             <div className="p-3">
               <div className="flex flex-row items-center relative">
-                <span className="text-lg font-bold">{selectedCard.name}</span>
+                {selectedCard.link ? (
+                  <a
+                    href={selectedCard.link}
+                    target="_blank"
+                    className="flex flex-row items-center w-fit hover:underline"
+                  >
+                    <span className="text-lg font-bold">
+                      {selectedCard.name}
+                    </span>
+
+                    <span>
+                      <ExternalLink className="ml-2 w-4 h-4 text-neutral-600" />
+                    </span>
+                  </a>
+                ) : (
+                  <span className="text-lg font-bold">{selectedCard.name}</span>
+                )}
                 <button
                   onClick={() => setSelectedCard(null)}
                   className="absolute right-0"
@@ -80,6 +96,7 @@ function App() {
                 </button>
               </div>
               <p className="line-clamp-2">{selectedCard.text}</p>
+
               <div className="flex flex-row flex-wrap gap-2 py-2">
                 {selectedCard.tags.map((e, id) => (
                   <span className="border px-2 text-sm" key={id}>
@@ -88,8 +105,6 @@ function App() {
                 ))}
               </div>
             </div>
-
-            {/* </div> */}
           </div>
         </div>
       )}
