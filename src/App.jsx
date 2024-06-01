@@ -1,4 +1,4 @@
-import { ExternalLink, Github, Linkedin, Twitter, X } from "lucide-react";
+import { ExternalLink, Github, Linkedin, X } from "lucide-react";
 import GoogleSlide from "./components/GoogleSlide";
 import Card from "./components/Card";
 import data from "./lib/data.json";
@@ -31,7 +31,6 @@ function ProfileCard() {
             href="https://x.com/madhav240"
             className="bg-white border border-slate-300 p-1 w-10 h-10 rounded-full flex flex-row items-center justify-center"
           >
-            {/* <Twitter className="w-5 h-5 hover:fill-black" /> */}
             <svg
               xmlns="http://www.w3.org/2000/svg"
               x="0px"

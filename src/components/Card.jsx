@@ -12,6 +12,7 @@ export default function Card({ props, setSelectedCard }) {
                 src={props.image}
                 alt=""
                 onClick={() => setSelectedCard(props)}
+                loading="lazy"
               />
             </div>
           </>
