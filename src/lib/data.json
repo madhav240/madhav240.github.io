@@ -35,5 +35,12 @@
     "tags": ["Svelte", "SvelteKit", "TailwindCSS"],
     "image": "./images/ecommerce.jpeg",
     "link": "https://ecom-exp.vercel.app/product"
+  },
+  {
+    "name": "Photo Editor",
+    "text": "Under Development",
+    "tags": ["React", "Next", "TailwindCSS"],
+    "image": "./images/photo-editor.png",
+    "link": "https://pedi-six.vercel.app"
   }
 ]
