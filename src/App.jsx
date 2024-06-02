@@ -94,7 +94,7 @@ function App() {
                   <X />
                 </button>
               </div>
-              <p className="line-clamp-2">{selectedCard.text}</p>
+              <p>{selectedCard.text}</p>
 
               <div className="flex flex-row flex-wrap gap-2 py-2">
                 {selectedCard.tags.map((e, id) => (

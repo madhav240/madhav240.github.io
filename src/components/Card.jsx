@@ -49,7 +49,7 @@ export default function Card({ props, setSelectedCard }) {
             )}
           </div>
 
-          <p className="line-clamp-2">{props.text}</p>
+          <p>{props.text}</p>
           <div className="flex flex-row flex-wrap gap-2 mt-2">
             {props.tags.map((e, id) => (
               <span className="border px-2 text-sm" key={id}>
