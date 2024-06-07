@@ -11,11 +11,11 @@ export default function Card({ props, setSelectedCard }) {
         <div className="p-2">
           <div className="relative">
             <span className="text-lg font-bold mr-3">{props.name}</span>
-            <div className="flex flex-row absolute right-0 top-0 gap-x-4 items-center">
+            <div className="flex flex-row absolute right-0 top-0 gap-x-5 items-center">
               {props.links &&
                 props.links.map((link, index) => (
                   <a href={link.url} key={index}>
-                    <span className="bg-black text-white font-medium px-2 rounded-md">
+                    <span className="bg-black text-white font-medium px-2 py-[0.2rem] rounded-md">
                       {link.name}
                     </span>
                   </a>

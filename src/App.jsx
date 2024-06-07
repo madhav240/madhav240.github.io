@@ -76,7 +76,7 @@ function App() {
                   {selectedCard.links &&
                     selectedCard.links.map((link, index) => (
                       <a href={link.url} key={index}>
-                        <span className="bg-black text-white font-medium px-2 rounded-md">
+                        <span className="bg-black text-white font-medium px-2 py-[0.2rem] rounded-md">
                           {link.name}
                         </span>
                       </a>
