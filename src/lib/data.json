@@ -35,14 +35,6 @@
     ]
   },
   {
-    "name": "Ecommerce",
-    "text": "Experimental",
-    "tags": ["Svelte", "SvelteKit", "TailwindCSS"],
-    "image": "./images/ecommerce.jpeg",
-    "links": [{ "name": "Live", "url": "https://ecom-exp.vercel.app/product" }]
-  },
-
-  {
     "name": "Check Emails",
     "text": "Classify emails from Gmail using ChatGPT",
     "tags": ["React", "Next", "TailwindCSS", "Gmail API", "OpenAI API"],
@@ -51,6 +43,13 @@
       { "name": "Live", "url": "https://check-emails-beta.vercel.app" },
       { "name": "Code", "url": "https://github.com/madhav240/check-emails" }
     ]
+  },
+  {
+    "name": "Ecommerce",
+    "text": "Experimental",
+    "tags": ["Svelte", "SvelteKit", "TailwindCSS"],
+    "image": "./images/ecommerce.jpeg",
+    "links": [{ "name": "Live", "url": "https://ecom-exp.vercel.app/product" }]
   },
   {
     "name": "Photo Editor",
