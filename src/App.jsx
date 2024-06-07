@@ -64,35 +64,24 @@ function App() {
       </div>
 
       {selectedCard && (
-        <div className="w-dvw h-dvh backdrop-blur-sm bg-black/40 fixed top-0 overflow-hidden flex flex-row justify-center items-center px-2">
+        <div className="w-dvw h-dvh backdrop-blur-sm bg-black/40 fixed top-0 overflow-hidden flex flex-col justify-center items-center px-2">
           <div className="bg-white max-w-3xl sm:w-[45rem] md:w-[50rem]  rounded-md ">
-            <GoogleSlide ID={selectedCard.slideID} />
-
+            <GoogleSlide ID={selectedCard.presentation} />
             <div className="p-3">
-              <div className="flex flex-row items-center relative">
-                {selectedCard.link ? (
-                  <a
-                    href={selectedCard.link}
-                    target="_blank"
-                    className="flex flex-row items-center w-fit hover:underline"
-                  >
-                    <span className="text-lg font-bold">
-                      {selectedCard.name}
-                    </span>
-
-                    <span>
-                      <ExternalLink className="ml-2 w-4 h-4 text-neutral-600" />
-                    </span>
-                  </a>
-                ) : (
-                  <span className="text-lg font-bold">{selectedCard.name}</span>
-                )}
-                <button
-                  onClick={() => setSelectedCard(null)}
-                  className="absolute right-0"
-                >
-                  <X />
-                </button>
+              <div className="relative">
+                <span className="text-lg font-bold mr-3">
+                  {selectedCard.name}
+                </span>
+                <div className="flex flex-row absolute right-0 top-0 gap-x-4 items-center">
+                  {selectedCard.links &&
+                    selectedCard.links.map((link, index) => (
+                      <a href={link.url} key={index}>
+                        <span className="bg-black text-white font-medium px-2 rounded-md">
+                          {link.name}
+                        </span>
+                      </a>
+                    ))}
+                </div>
               </div>
               <p>{selectedCard.text}</p>
 
@@ -105,6 +94,12 @@ function App() {
               </div>
             </div>
           </div>
+          <button
+            onClick={() => setSelectedCard(null)}
+            className="p-2 mt-4 bg-white rounded-full"
+          >
+            <X />
+          </button>
         </div>
       )}
     </>

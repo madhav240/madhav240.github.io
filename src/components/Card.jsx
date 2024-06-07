@@ -1,52 +1,35 @@
-import { ExternalLink, Play } from "lucide-react";
-
 export default function Card({ props, setSelectedCard }) {
   return (
     <>
       <div className="bg-white rounded-md pb-4 shadow-md">
-        {props.slideID ? (
-          <>
-            <div className="relative">
-              <img
-                className="md:h-64 sm:w-full p-1 object-cover cursor-pointer"
-                src={props.image}
-                alt=""
-                onClick={() => setSelectedCard(props)}
-                loading="lazy"
-              />
-            </div>
-          </>
-        ) : (
-          <img
-            className="md:h-64 sm:w-full p-1 object-cover"
-            src={props.image}
-            alt=""
-          />
-        )}
+        <img
+          className="md:h-64 sm:w-full p-1 object-cover"
+          src={props.image}
+          alt=""
+        />
 
         <div className="p-2">
-          <div className="flex flex-row items-center ">
-            {props.link ? (
-              <a
-                href={props.link}
-                target="_blank"
-                className="flex flex-row items-center w-fit hover:underline"
-              >
-                <span className="text-lg font-bold">{props.name}</span>
+          <div className="relative">
+            <span className="text-lg font-bold mr-3">{props.name}</span>
+            <div className="flex flex-row absolute right-0 top-0 gap-x-4 items-center">
+              {props.links &&
+                props.links.map((link, index) => (
+                  <a href={link.url} key={index}>
+                    <span className="bg-black text-white font-medium px-2 rounded-md">
+                      {link.name}
+                    </span>
+                  </a>
+                ))}
 
-                <span>
-                  <ExternalLink className="ml-2 w-4 h-4 text-neutral-600" />
-                </span>
-              </a>
-            ) : (
-              <span className="text-lg font-bold">{props.name}</span>
-            )}
-
-            {props.slideID && (
-              <span>
-                <Play className="ml-2 w-4 h-4 text-neutral-600 mt-[1px]" />
-              </span>
-            )}
+              {props.presentation && (
+                <button
+                  onClick={() => setSelectedCard(props)}
+                  className="bg-black text-white font-medium px-2 rounded-md"
+                >
+                  Slides
+                </button>
+              )}
+            </div>
           </div>
 
           <p>{props.text}</p>
