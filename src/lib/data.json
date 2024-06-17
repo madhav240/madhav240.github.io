@@ -45,17 +45,30 @@
     ]
   },
   {
-    "name": "Ecommerce",
-    "text": "Experimental",
-    "tags": ["Svelte", "SvelteKit", "TailwindCSS"],
-    "image": "./images/ecommerce.jpeg",
-    "links": [{ "name": "Live", "url": "https://ecom-exp.vercel.app/product" }]
-  },
-  {
     "name": "Photo Editor",
     "text": "Under Development",
     "tags": ["React", "Next", "TailwindCSS"],
     "image": "./images/photo-editor.png",
     "links": [{ "name": "Live", "url": "https://pedi-six.vercel.app" }]
+  },
+  {
+    "name": "Ecommerce",
+    "text": "",
+    "tags": ["Svelte", "SvelteKit", "TailwindCSS"],
+    "image": "./images/ecommerce.jpeg",
+    "links": [{ "name": "Live", "url": "https://ecom-exp.vercel.app/product" }]
+  },
+  {
+    "name": "Web Scraper",
+    "text": "",
+    "tags": ["React", "Next", "MongoDB", "Cheerio", "Puppeteer"],
+    "image": "./images/web-scraper.png",
+    "links": [
+      {
+        "name": "Video",
+        "url": "https://www.loom.com/share/01da4de292a5487484842e9ec5c3791c"
+      },
+      { "name": "Code", "url": "https://github.com/madhav240/web-scraper" }
+    ]
   }
 ]
