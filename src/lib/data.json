@@ -57,5 +57,5 @@
     "tags": ["Svelte", "SvelteKit", "TailwindCSS"],
     "image": "./images/ecommerce.jpeg",
     "links": [{ "name": "Live", "url": "https://ecom-exp.vercel.app/product" }]
-  },
+  }
 ]
