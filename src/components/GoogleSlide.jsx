@@ -10,10 +10,9 @@ export default function GoogleSlide({ ID }) {
     <>
       <iframe
         src={`https://docs.google.com/presentation/d/e/${ID}/embed?start=false&loop=false&delayms=3000`}
-        frameBorder="0"
         allowFullScreen={true}
-        // mozAllowFullScreen="true"
-        // webkitAllowFullScreen="true"
+        mozAllowFullScreen="true"
+        webkitAllowFullScreen="true"
         className="w-full"
         ref={iframeRef}
       ></iframe>

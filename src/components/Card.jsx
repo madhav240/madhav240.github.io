@@ -2,11 +2,13 @@ export default function Card({ props, setSelectedCard }) {
   return (
     <>
       <div className="bg-white rounded-md pb-4 shadow-md">
-        <img
-          className="md:h-64 sm:w-full p-1 object-cover"
-          src={props.image}
-          alt=""
-        />
+        <div className="md:h-64 m-1  overflow-hidden flex items-center justify-center">
+          <img
+            className="w-full h-full object-cover transform transition-transform duration-300 hover:scale-105"
+            src={props.image}
+            alt=""
+          />
+        </div>
 
         <div className="p-2">
           <div className="relative">
