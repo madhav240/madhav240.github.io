@@ -20,7 +20,7 @@
     <script type="module" src="/src/main.jsx"></script>
     <script>
       const img = new Image();
-      img.src = `https://picsum.photos/${window.innerWidth}/${window.innerHeight}.webp`;
+      img.src = `https://picsum.photos/${window.screen.width}/${window.screen.height}.webp?grayscale`;
       img.onload = () => {
         document.body.style.backgroundImage = `url(${img.src})`;
       };
