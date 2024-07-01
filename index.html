@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <link rel="icon" href="/images/madhav.jpg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Portfolio" />
     <title>Madhav Mishra</title>
@@ -13,10 +14,17 @@
     <meta name="twitter:title" content="Madhav Mishra" />
     <meta name="twitter:image" content="/images/portfolio.png" />
     <meta name="twitter:card" content="summary_large_image" />
-    <script type="module" crossorigin src="/assets/index-ojBY77Fi.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-Yka5vylw.css">
+    <script type="module" crossorigin src="/assets/index-B4Qeppat.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-C3T4oXcb.css">
   </head>
-  <body class="bg-slate-100 overflow-hidden">
+  <body class="bg-slate-100 overflow-hidden bg-no-repeat bg-cover">
     <div id="root"></div>
+    <script>
+      const img = new Image();
+      img.src = `https://picsum.photos/${window.innerWidth}/${window.innerHeight}.webp`;
+      img.onload = () => {
+        document.body.style.backgroundImage = `url(${img.src})`;
+      };
+    </script>
   </body>
 </html>
