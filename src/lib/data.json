@@ -13,7 +13,9 @@
     "tags": ["Svelte", "SvelteKit", "MongoDB", "TailwindCSS"],
     "presentation": "2PACX-1vTBBQOce90Tykl1wqVzhS5uW6ZctPX4r3l7vEF7LSzKSDFksz-Trm9ufL530v47R9K8efJwCkqzSNwo",
     "image": "./images/sowt.png",
-    "links": [{ "name": "Live", "url": "https://sowt.vercel.app/madhavmishra1124" }]
+    "links": [
+      { "name": "Live", "url": "https://sowt.vercel.app/madhavmishra1124" }
+    ]
   },
   {
     "name": "Kanha",
@@ -35,16 +37,6 @@
     ]
   },
   {
-    "name": "Check Emails",
-    "text": "Classify emails from Gmail using ChatGPT",
-    "tags": ["React", "Next", "TailwindCSS", "Gmail API", "OpenAI API"],
-    "image": "./images/check-emails.png",
-    "links": [
-      { "name": "Live", "url": "https://check-emails-beta.vercel.app" },
-      { "name": "Code", "url": "https://github.com/madhav240/check-emails" }
-    ]
-  },
-  {
     "name": "Photo Editor",
     "text": "Under Development",
     "tags": ["React", "Next", "TailwindCSS"],
@@ -54,7 +46,7 @@
   {
     "name": "Ecommerce",
     "text": "",
-    "tags": ["Svelte", "SvelteKit", "TailwindCSS"],
+    "tags": ["Svelte", "SvelteKit", "TailwindCSS", "View3D"],
     "image": "./images/ecommerce.jpeg",
     "links": [{ "name": "Live", "url": "https://ecom-exp.vercel.app/product" }]
   }
