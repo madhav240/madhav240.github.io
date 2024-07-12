@@ -12,7 +12,7 @@ function App() {
     <>
       <div className="flex flex-row px-1">
         <ProfileCard />
-        <div className="grid md:grid-cols-3 gap-x-2 gap-y-4 py-2 pr-1 pl-14 overflow-y-auto h-dvh no-scrollbar">
+        <div className="flex flex-wrap items-start justify-center gap-x-2 gap-y-4 py-2 pr-1 pl-14 overflow-y-auto h-dvh no-scrollbar">
           {data.map((e, id) => (
             <Card props={e} key={id} setSelectedCard={setSelectedCard} />
           ))}

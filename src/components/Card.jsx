@@ -1,8 +1,8 @@
 export default function Card({ props, setSelectedCard }) {
   return (
     <>
-      <div className="bg-white rounded-md pb-4 shadow-md">
-        <div className="md:h-64 m-1  overflow-hidden flex items-center justify-center">
+      <div className="bg-white rounded-md pb-4 shadow-md ">
+        <div className="m-1 max-w-2xl overflow-hidden flex items-center justify-center">
           <img
             className="w-full h-full object-cover transform transition-transform duration-300 hover:scale-105"
             src={props.image}
@@ -12,32 +12,31 @@ export default function Card({ props, setSelectedCard }) {
 
         <div className="p-2">
           <div className="relative">
-            <span className="text-lg font-bold mr-3">{props.name}</span>
+            <span className="text-xl font-bold mr-3">{props.name}</span>
             <div className="flex flex-row absolute right-0 top-0 gap-x-5 items-center">
               {props.links &&
                 props.links.map((link, index) => (
                   <a href={link.url} key={index}>
-                    <span className="bg-black text-white font-medium px-2 py-[0.2rem] rounded-md">
+                    <span className="bg-black text-white font-medium px-8 py-1 rounded-xl hover:bg-white hover:text-black border-2 border-slate-900">
                       {link.name}
                     </span>
                   </a>
                 ))}
 
               {props.presentation && (
-                <button
-                  onClick={() => setSelectedCard(props)}
-                  className="bg-black text-white font-medium px-2 rounded-md"
-                >
-                  Slides
+                <button onClick={() => setSelectedCard(props)}>
+                  <span className="bg-black text-white font-medium px-6 py-1 rounded-xl hover:bg-white hover:text-black border-2 border-slate-900">
+                    Slides
+                  </span>
                 </button>
               )}
             </div>
           </div>
 
-          <p>{props.text}</p>
-          <div className="flex flex-row flex-wrap gap-2 mt-2">
+          <p className="mt-2">{props.text}</p>
+          <div className="flex flex-row flex-wrap gap-3 mt-2">
             {props.tags.map((e, id) => (
-              <span className="border px-2 text-sm" key={id}>
+              <span className="border-2 border-black px-2 rounded-md" key={id}>
                 {e}
               </span>
             ))}
