@@ -17,7 +17,7 @@ export default function Card({ props, setSelectedCard }) {
               {props.links &&
                 props.links.map((link, index) => (
                   <a href={link.url} key={index}>
-                    <span className="bg-black text-white font-medium px-8 py-1 rounded-xl hover:bg-white hover:text-black border-2 border-slate-900">
+                    <span className="bg-black text-white font-medium px-8 py-1 rounded-xl hover:bg-black/90">
                       {link.name}
                     </span>
                   </a>
@@ -25,7 +25,7 @@ export default function Card({ props, setSelectedCard }) {
 
               {props.presentation && (
                 <button onClick={() => setSelectedCard(props)}>
-                  <span className="bg-black text-white font-medium px-6 py-1 rounded-xl hover:bg-white hover:text-black border-2 border-slate-900">
+                  <span className="bg-black text-white font-medium px-6 py-1 rounded-xl hover:bg-black/90">
                     Slides
                   </span>
                 </button>
