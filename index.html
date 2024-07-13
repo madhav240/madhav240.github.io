@@ -14,17 +14,23 @@
     <meta name="twitter:title" content="Madhav Mishra" />
     <meta name="twitter:image" content="/images/portfolio.png" />
     <meta name="twitter:card" content="summary_large_image" />
-    <script type="module" crossorigin src="/assets/index-BfVTzdxl.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-motxd_5F.css">
+    <script type="module" crossorigin src="/assets/index-82hInsXU.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-DOZEKQyL.css">
   </head>
   <body class="bg-slate-100 overflow-hidden bg-no-repeat bg-cover">
     <div id="root"></div>
     <script>
-      const img = new Image();
-      img.src = `https://picsum.photos/${window.screen.width}/${window.screen.height}.webp?grayscale`;
-      img.onload = () => {
-        document.body.style.backgroundImage = `url(${img.src})`;
-      };
+      (async () => {
+        const res = await fetch(
+          "https://random-tailwind-gradient.vercel.app/api/css?intensity=900&direction=tl"
+        );
+        let data = await res.text();
+        data = data.substring(
+          data.indexOf("background-image:") + 17,
+          data.lastIndexOf("}")
+        );
+        document.body.style.backgroundImage = data;
+      })();
     </script>
   </body>
 </html>
