@@ -1,10 +1,10 @@
 export default function Card({ props, setSelectedCard }) {
   return (
     <>
-      <div className="bg-white rounded-md pb-4 shadow-md ">
-        <div className="m-1 max-w-2xl overflow-hidden flex items-center justify-center">
+      <div className="bg-white rounded-md pb-4 shadow-md max-w-2xl">
+        <div className="m-1 overflow-hidden flex items-center justify-center max-h-96">
           <img
-            className="w-full h-full object-cover transform transition-transform duration-300 hover:scale-105"
+            className="w-full h-full  object-contain transform transition-transform duration-300 hover:scale-105"
             src={props.image}
             alt=""
           />

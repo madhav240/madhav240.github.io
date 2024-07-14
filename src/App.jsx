@@ -10,9 +10,9 @@ function App() {
 
   return (
     <>
-      <div className="flex flex-row px-1">
+      <div className="flex flex-row px-1 lg:pl-2 ">
         <ProfileCard />
-        <div className="flex flex-wrap items-start justify-center gap-6 py-2 pr-1 pl-14 overflow-y-auto h-dvh no-scrollbar">
+        <div className="flex flex-wrap max-w-screen-2xl mx-auto items-start justify-center gap-6 py-6 lg:pl-9 pl-14 overflow-y-auto h-dvh no-scrollbar">
           {data.map((e, id) => (
             <Card props={e} key={id} setSelectedCard={setSelectedCard} />
           ))}
