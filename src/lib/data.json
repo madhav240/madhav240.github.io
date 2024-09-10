@@ -1,7 +1,7 @@
 [
   {
     "name": "rilix",
-    "text": "A music platform that provides the best 30-second snippets of any music",
+    "text": "A music platform that provides the best 30-second snippets of music",
     "tags": ["React", "React Router", "Spotify Web API", "TailwindCSS"],
     "presentation": "2PACX-1vTkYQTtJlY8oL5qFcKsHyTSTp9lfNuJ3K_PRPET4-OtEf5C3qSKnXso9vxMj4AvuTJqGAE8RjYz13j1",
     "image": "./images/rilix.png",
