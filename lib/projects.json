@@ -72,6 +72,7 @@
         "links": {
             "github": "https://github.com/madhav240/nexcent",
             "demo": "https://nexcent-ashy.vercel.app/"
-        }
+        },
+        "category": "Web Application"
     }
 ]

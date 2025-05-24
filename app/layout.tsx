@@ -3,7 +3,7 @@ import './globals.css'
 
 export const metadata: Metadata = {
   title: 'Madhav Mishra',
-  description: 'Passionate about creating innovative web solutions and leveraging data science to solve real-world problems.',
+  description: 'Passionate about creating innovative web solutions and leveraging AI to solve real-world problems.',
 }
 
 export default function RootLayout({

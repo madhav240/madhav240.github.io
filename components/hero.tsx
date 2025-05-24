@@ -41,7 +41,7 @@ export function Hero() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.6, duration: 0.8 }}
               >
-                Passionate about creating innovative web solutions and leveraging data science to solve real-world
+                Passionate about creating innovative web solutions and leveraging AI to solve real-world
                 problems.
               </motion.p>
             </div>
