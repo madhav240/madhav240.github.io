@@ -1,7 +1,7 @@
 "use client"
 
 import { Button } from "@/components/ui/button"
-import { Github, Linkedin, Mail, Download } from "lucide-react"
+import { Github, Linkedin, Mail, Download, X } from "lucide-react"
 import { motion } from "framer-motion"
 
 export function Hero() {
@@ -54,16 +54,16 @@ export function Hero() {
             >
               <a href="mailto:madhavmishra1124@gmail.com">
 
-              <Button size="lg" className="gap-2">
-                <Mail className="w-4 h-4" />
-                Get In Touch
-              </Button>
+                <Button size="lg" className="gap-2">
+                  <Mail className="w-4 h-4" />
+                  Get In Touch
+                </Button>
               </a>
               <a href="https://drive.google.com/file/d/1U_lgDUmFepT0nlNWU4VuG628n5aL3NHf/view?usp=drivesdk">
-              <Button variant="outline" size="lg" className="gap-2">
-                <Download className="w-4 h-4" />
-                Download CV
-              </Button>
+                <Button variant="outline" size="lg" className="gap-2">
+                  <Download className="w-4 h-4" />
+                  Download CV
+                </Button>
               </a>
 
             </motion.div>
@@ -74,15 +74,25 @@ export function Hero() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 1, duration: 0.8 }}
             >
-              <Button variant="ghost" size="icon">
-                <Github className="w-5 h-5" />
-              </Button>
-              <Button variant="ghost" size="icon">
-                <Linkedin className="w-5 h-5" />
-              </Button>
-              <Button variant="ghost" size="icon">
-                <Mail className="w-5 h-5" />
-              </Button>
+              <a href="https://github.com/madhav240" target="_blank">
+
+                <Button variant="ghost" size="icon">
+                  <Github className="w-5 h-5" />
+                </Button>
+              </a>
+              <a href="https://linkedin.com/in/madhav240" target="_blank">
+                <Button variant="ghost" size="icon">
+                  <Linkedin className="w-5 h-5" />
+                </Button>
+              </a>
+              <a href="https://x.com/madhav240" target="_blank">
+                <Button variant="ghost" size="icon">
+                  <svg className="w-5 h-5 bi" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"  viewBox="0 0 16 16">
+                    <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z" />
+                  </svg>
+                </Button>
+              </a>
+
             </motion.div>
           </motion.div>
 
