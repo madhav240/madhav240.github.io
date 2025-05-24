@@ -33,7 +33,7 @@ export function Hero() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.4, duration: 0.8 }}
               >
-                Full Stack Developer & AI Enthusiast
+                Web Developer & AI Enthusiast
               </motion.p>
               <motion.p
                 className="text-lg text-muted-foreground max-w-2xl"
