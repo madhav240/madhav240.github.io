@@ -1,0 +1,62 @@
+[
+    {
+        "title": "rilix",
+        "description": "A platform where users can scroll and listen to 30 seconds of music available on Spotify. Users can manage their favorites and search for music after logging in with their Spotify account.",
+        "image": "/madhav240.github.io/projects/rilix.png",
+        "technologies": [
+            "React.js",
+            "React Router",
+            "Spotify Web API",
+            "TailwindCSS"
+        ],
+        "links": {
+            "demo": "https://rilix.vercel.app/",
+            "presentation": "https://docs.google.com/presentation/d/e/2PACX-1vTkYQTtJlY8oL5qFcKsHyTSTp9lfNuJ3K_PRPET4-OtEf5C3qSKnXso9vxMj4AvuTJqGAE8RjYz13j1/pub?start=false&loop=false&delayms=3000"
+        },
+        "category": "Web Application"
+    },
+    {
+        "title": "SOWT",
+        "description": "A platform where users can create personal portfolios by uploading different types of posts and grouping them into sections. Features Google authentication and automatic media embedding.",
+        "image": "/madhav240.github.io/projects/sowt.png",
+        "technologies": [
+            "Svelte.js",
+            "SvelteKit",
+            "MongoDB",
+            "TailwindCSS"
+        ],
+        "links": {
+            "demo": "https://sowt.vercel.app/madhavmishra1124",
+            "presentation": "https://docs.google.com/presentation/d/e/2PACX-1vTBBQOce90Tykl1wqVzhS5uW6ZctPX4r3l7vEF7LSzKSDFksz-Trm9ufL530v47R9K8efJwCkqzSNwo/pub?start=false&loop=false&delayms=3000"
+        },
+        "category": "Web Application"
+    },
+    {
+        "title": "Kanha",
+        "description": "A multi-page website for one of the 12 Houses for IITM BS Degree Students. Features diverse animations using SAoS and Animista library with static site generation.",
+        "image": "/madhav240.github.io/projects/kanha.png",
+        "technologies": [
+            "Svelte.js",
+            "SvelteKit",
+            "TailwindCSS",
+            "Animista"
+        ],
+        "links": {
+            "presentation": "https://docs.google.com/presentation/d/e/2PACX-1vQrDxt6GVtQeG6sXgrW5AKnl93nCIbraEt9-dDZiV_RUqKRvykGJDyH4tbM2R3NAxuu08nzTRzW0BNt/pub?start=false&loop=false&delayms=3000"
+        },
+        "category": "Web Application"
+    },
+    {
+        "title": "Portfolio",
+        "description": "Personal website to show my work.",
+        "image": "/madhav240.github.io/projects/portfolio.png",
+        "technologies": [
+            "React",
+            "TailwindCSS"
+        ],
+        "links": {
+            "github": "https://github.com/madhav240/madhav240.github.io"
+        },
+        "category": "Web Application"
+    }
+]
