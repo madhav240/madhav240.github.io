@@ -10,7 +10,6 @@ const nextConfig = {
     unoptimized: true,
   },
   output: "export",
-  // basePath: "/madhav240.github.io",
 }
 
 export default nextConfig

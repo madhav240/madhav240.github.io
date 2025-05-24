@@ -2,7 +2,7 @@
     {
         "title": "rilix",
         "description": "A platform where users can scroll and listen to 30 seconds of music available on Spotify. Users can manage their favorites and search for music after logging in with their Spotify account.",
-        "image": "/madhav240.github.io/projects/rilix.png",
+        "image": "/projects/rilix.png",
         "technologies": [
             "React.js",
             "React Router",
@@ -18,7 +18,7 @@
     {
         "title": "SOWT",
         "description": "A platform where users can create personal portfolios by uploading different types of posts and grouping them into sections. Features Google authentication and automatic media embedding.",
-        "image": "/madhav240.github.io/projects/sowt.png",
+        "image": "/projects/sowt.png",
         "technologies": [
             "Svelte.js",
             "SvelteKit",
@@ -34,7 +34,7 @@
     {
         "title": "Kanha",
         "description": "A multi-page website for one of the 12 Houses for IITM BS Degree Students. Features diverse animations using SAoS and Animista library with static site generation.",
-        "image": "/madhav240.github.io/projects/kanha.png",
+        "image": "/projects/kanha.png",
         "technologies": [
             "Svelte.js",
             "SvelteKit",
@@ -49,7 +49,7 @@
     {
         "title": "Portfolio",
         "description": "Personal website to show my work.",
-        "image": "/madhav240.github.io/projects/portfolio.png",
+        "image": "/projects/portfolio.png",
         "technologies": [
             "React",
             "TailwindCSS"
@@ -68,7 +68,7 @@
             "TailwindCSS",
             "ShadCN"
         ],
-        "image": "./images/nexcent.png",
+        "image": "/projects/nexcent.png",
         "links": {
             "github": "https://github.com/madhav240/nexcent",
             "demo": "https://nexcent-ashy.vercel.app/"

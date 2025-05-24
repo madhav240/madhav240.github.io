@@ -33,7 +33,7 @@ export function Hero() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.4, duration: 0.8 }}
               >
-                Full Stack Developer & Data Science Student
+                Full Stack Developer & AI Enthusiast
               </motion.p>
               <motion.p
                 className="text-lg text-muted-foreground max-w-2xl"
@@ -99,7 +99,7 @@ export function Hero() {
                 transition={{ duration: 0.3 }}
               >
                 <img
-                  src="/madhav240.github.io/madhav.jpg"
+                  src="/madhav.jpg"
                   alt="Madhav Mishra"
                   className="w-full h-full object-cover"
                 />
