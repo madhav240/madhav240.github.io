@@ -58,5 +58,20 @@
             "github": "https://github.com/madhav240/madhav240.github.io"
         },
         "category": "Web Application"
+    },
+    {
+        "title": "Nexcent",
+        "description": "A landing page",
+        "technologies": [
+            "React",
+            "Next",
+            "TailwindCSS",
+            "ShadCN"
+        ],
+        "image": "./images/nexcent.png",
+        "links": {
+            "github": "https://github.com/madhav240/nexcent",
+            "demo": "https://nexcent-ashy.vercel.app/"
+        }
     }
 ]
