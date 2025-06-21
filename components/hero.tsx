@@ -59,7 +59,7 @@ export function Hero() {
                   Get In Touch
                 </Button>
               </a>
-              <a href="https://drive.google.com/file/d/1U_lgDUmFepT0nlNWU4VuG628n5aL3NHf/view?usp=drivesdk">
+              <a href="https://drive.google.com/file/d/13gDQDN3YQnspvdvggq0avJW9Ic4dD8Ba/view?usp=sharing">
                 <Button variant="outline" size="lg" className="gap-2">
                   <Download className="w-4 h-4" />
                   Download CV
