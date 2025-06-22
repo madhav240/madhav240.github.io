@@ -1,0 +1,45 @@
+[
+    {
+        "company": "Tall Breeze",
+        "position": "Software Engineer",
+        "type": "Internship",
+        "duration": "Aug - Sep 2024",
+        "location": "Remote · Ghaziabad, Uttar Pradesh",
+        "description": "Worked on multiple projects converting Figma designs to code, ensuring responsive and high-quality implementation. Collaborated with design teams to maintain pixel-perfect accuracy and implemented Storybook for component documentation.",
+        "technologies": [
+            "Next.js",
+            "Storybook",
+            "React.js",
+            "TypeScript"
+        ]
+    },
+    {
+        "company": "Esoteric Mineral Solutions",
+        "position": "Web Developer",
+        "type": "Freelance",
+        "duration": "Jul 2024",
+        "location": "Remote · Bengaluru, Karnataka",
+        "description": "Single-handedly developed a modern, fully responsive company website ensuring seamless performance across all devices. Implemented automated email system for contact notifications and achieved 95+ PageSpeed Insights score.",
+        "technologies": [
+            "Next.js",
+            "TailwindCSS",
+            "Framer Motion",
+            "Hostinger"
+        ]
+    },
+    {
+        "company": "Lamarr",
+        "position": "Frontend Engineer",
+        "type": "Internship",
+        "duration": "Jun 2024",
+        "location": "Remote · Kanpur, Uttar Pradesh",
+        "description": "Developed user-friendly search webpage for efficient record retrieval and display. Customized Quill editor to improve user experience and added templating features. Reduced search response time by 40%.",
+        "technologies": [
+            "Next.js",
+            "TailwindCSS",
+            "FastAPI",
+            "RadixUI",
+            "Supabase"
+        ]
+    }
+]
