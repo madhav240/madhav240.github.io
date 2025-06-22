@@ -67,9 +67,6 @@ export function Dashboard() {
     },
   ]
 
-
-  
-
   const educationData = [
     {
       institution: "Indian Institute of Technology Madras",
@@ -202,6 +199,27 @@ export function Dashboard() {
                       </div>
                     </div>
                   </div>
+
+                  <div className="grid sm:grid-cols-2 gap-3">
+                    {socialLinks.map((link) => (
+                      <motion.div key={link.name} whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }}>
+                        <a
+                          href={link.href}
+                          target={link.href.startsWith("http") ? "_blank" : undefined}
+                          rel={link.href.startsWith("http") ? "noopener noreferrer" : undefined}
+                          className={`flex items-center gap-3 p-3 border rounded-lg transition-all duration-200 ${link.color} hover:shadow-md group`}
+                        >
+                          <div className="w-10 h-10 bg-muted/50 rounded-full flex items-center justify-center group-hover:bg-background transition-colors">
+                            <link.icon className="w-5 h-5" />
+                          </div>
+                          <div className="flex-1">
+                            <div className="font-medium">{link.name}</div>
+                            <div className="text-xs text-muted-foreground">{link.description}</div>
+                          </div>
+                        </a>
+                      </motion.div>
+                    ))}
+                  </div>
                 </CardContent>
               </Card>
             </motion.div>
@@ -329,39 +347,6 @@ export function Dashboard() {
 
           {/* Right Column */}
           <div className="space-y-6">
-            {/* Links Section */}
-            <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.5 }}>
-              <Card>
-                <CardHeader>
-                  <CardTitle className="flex items-center gap-2">
-                    <Mail className="w-5 h-5" />
-                    Links
-                  </CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <div className="space-y-3">
-                    {socialLinks.map((link) => (
-                      <motion.div key={link.name} whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }}>
-                        <a
-                          href={link.href}
-                          target={link.href.startsWith("http") ? "_blank" : undefined}
-                          rel={link.href.startsWith("http") ? "noopener noreferrer" : undefined}
-                          className={`flex items-center gap-3 p-3 border rounded-lg transition-all duration-200 ${link.color} hover:shadow-md group`}
-                        >
-                          <div className="w-10 h-10 bg-muted/50 rounded-full flex items-center justify-center group-hover:bg-background transition-colors">
-                            <link.icon className="w-5 h-5" />
-                          </div>
-                          <div className="flex-1">
-                            <div className="font-medium">{link.name}</div>
-                            <div className="text-xs text-muted-foreground">{link.description}</div>
-                          </div>
-                        </a>
-                      </motion.div>
-                    ))}
-                  </div>
-                </CardContent>
-              </Card>
-            </motion.div>
 
             {/* Education */}
             <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.4 }}>
@@ -373,7 +358,7 @@ export function Dashboard() {
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <ScrollArea className="h-96">
+                  {/* <ScrollArea className="h-96"> */}
                     <div className="space-y-6 pr-4">
                       {educationData.map((edu) => (
                         <Card key={`${edu.institution}-${edu.duration}`} className="border-l-4 border-l-primary">
@@ -398,7 +383,7 @@ export function Dashboard() {
                         </Card>
                       ))}
                     </div>
-                  </ScrollArea>
+                  {/* </ScrollArea> */}
                 </CardContent>
               </Card>
             </motion.div>
@@ -415,7 +400,7 @@ export function Dashboard() {
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <ScrollArea className="h-80">
+                  {/* <ScrollArea className="h-80"> */}
                     <div className="space-y-4 pr-4">
                       {techCategories.map((category) => (
                         <div key={category.title} className="space-y-2">
@@ -430,7 +415,7 @@ export function Dashboard() {
                         </div>
                       ))}
                     </div>
-                  </ScrollArea>
+                  {/* </ScrollArea> */}
                 </CardContent>
               </Card>
             </motion.div>
