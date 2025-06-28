@@ -14,20 +14,6 @@
         ]
     },
     {
-        "company": "Esoteric Mineral Solutions",
-        "position": "Web Developer",
-        "type": "Freelance",
-        "duration": "Jul 2024",
-        "location": "Remote · Bengaluru, Karnataka",
-        "description": "Single-handedly developed a modern, fully responsive company website ensuring seamless performance across all devices. Implemented automated email system for contact notifications and achieved 95+ PageSpeed Insights score.",
-        "technologies": [
-            "Next.js",
-            "TailwindCSS",
-            "Framer Motion",
-            "Hostinger"
-        ]
-    },
-    {
         "company": "Lamarr",
         "position": "Frontend Engineer",
         "type": "Internship",

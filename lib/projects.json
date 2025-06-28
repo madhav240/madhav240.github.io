@@ -1,5 +1,20 @@
 [
     {
+        "title": "EMS",
+        "description": "Developed and launched a fully interactive, responsive website for a pearl pigment company utilizing modern web technologies, resulting in a seamless user experience across all devices. By implementing best practices in SEO and optimizing web performance, achieved over 95% scores on Google PageSpeed Insights for both mobile and desktop platforms.",
+        "image": "/projects/ems.png",
+        "technologies": [
+            "Next.js",
+            "TailwindCSS",
+            "Framer Motion",
+            "Hostinger"
+        ],
+        "links": {
+            "demo": "https://esotericminerals.com/"
+        },
+        "category": "Web Application"
+    },
+    {
         "title": "rilix",
         "description": "A platform where users can scroll and listen to 30 seconds of music available on Spotify. Users can manage their favorites and search for music after logging in with their Spotify account.",
         "image": "/projects/rilix.png",

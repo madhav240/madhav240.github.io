@@ -24,9 +24,9 @@ import { motion } from "framer-motion"
 import projects from "@/lib/projects.json"
 import experiences from "@/lib/experiences.json"
 
-function X(){
+function X() {
   return (
-    <svg className="w-5 h-5 bi" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"  viewBox="0 0 16 16">
+    <svg className="w-5 h-5 bi" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
       <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z" />
     </svg>
   )
@@ -36,34 +36,29 @@ function X(){
 export function Dashboard() {
   const techCategories = [
     {
-      title: "Frontend",
+      title: "Programming",
       technologies: [
-        "React",
-        "Next.js",
-        "Svelte",
-        "SvelteKit",
-        "TypeScript",
+        "Python",
         "JavaScript",
-        "HTML",
-        "CSS",
-        "TailwindCSS",
+        "TypeScript",
+        "SQL",
       ],
     },
     {
-      title: "Backend",
-      technologies: ["Python", "Node.js", "FastAPI", "Flask", "Express.js"],
+      title: "Web",
+      technologies: ["HTML", "CSS", "Node.js", "Express.js", "Svelte.js", "SvelteKit", "React.js", "Next.js", "Flask", "FastAPI"],
+    },
+    {
+      title: "AI/ML",
+      technologies: ["Pandas", "Keras", "PyTorch", "Scikit-learn", "OpenCV", "LLMs", "LangChain", "RAG", "Prompt Engineering"],
     },
     {
       title: "Database",
-      technologies: ["MongoDB", "PostgreSQL", "MySQL", "Supabase", "Redis"],
+      technologies: ["MongoDB", "PostgreSQL", "Supabase", "Redis"],
     },
     {
-      title: "Machine Learning",
-      technologies: ["PyTorch", "TensorFlow", "Keras", "Scikit-learn", "Pandas", "NumPy", "OpenCV", "Plotly"],
-    },
-    {
-      title: "Tools & Others",
-      technologies: ["Git", "GitHub", "Docker", "AWS", "Vercel", "Figma", "Hostinger", "Streamlit"],
+      title: "DevOps/Tools",
+      technologies: ["Linux", "Git", "GitHub", "AWS", "Docker", "Figma", "Jira"],
     },
   ]
 
@@ -83,13 +78,13 @@ export function Dashboard() {
   ]
 
   const socialLinks = [
-    {
-      name: "Resume",
-      href: "https://drive.google.com/file/d/13gDQDN3YQnspvdvggq0avJW9Ic4dD8Ba/view?usp=sharing",
-      icon: Download,
-      description: "Download CV",
-      color: "hover:bg-blue-50 hover:text-blue-600 hover:border-blue-200",
-    },
+    // {
+    //   name: "Resume",
+    //   href: "https://drive.google.com/file/d/13gDQDN3YQnspvdvggq0avJW9Ic4dD8Ba/view?usp=sharing",
+    //   icon: Download,
+    //   description: "Download CV",
+    //   color: "hover:bg-blue-50 hover:text-blue-600 hover:border-blue-200",
+    // },
     {
       name: "Email",
       href: "mailto:madhavmishra1124@gmail.com",
@@ -200,7 +195,7 @@ export function Dashboard() {
                     </div>
                   </div>
 
-                  <div className="grid sm:grid-cols-2 gap-3">
+                  <div className="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-5 gap-3">
                     {socialLinks.map((link) => (
                       <motion.div key={link.name} whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }}>
                         <a
@@ -214,7 +209,7 @@ export function Dashboard() {
                           </div>
                           <div className="flex-1">
                             <div className="font-medium">{link.name}</div>
-                            <div className="text-xs text-muted-foreground">{link.description}</div>
+                            {/* <div className="text-xs text-muted-foreground">{link.description}</div> */}
                           </div>
                         </a>
                       </motion.div>
@@ -224,7 +219,7 @@ export function Dashboard() {
               </Card>
             </motion.div>
 
-            
+
 
             {/* Experience Section */}
             <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.3 }}>
@@ -280,69 +275,7 @@ export function Dashboard() {
               </Card>
             </motion.div>
 
-            {/* Projects Section - List View */}
-            <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.2 }}>
-              <Card>
-                <CardHeader>
-                  <CardTitle className="flex items-center gap-2">
-                    <FolderOpen className="w-5 h-5" />
-                    Projects
-                  </CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <ScrollArea className="h-96">
-                    <div className="space-y-4 pr-4">
-                      {projects.map((project, index) => (
-                        <div
-                          key={project.title}
-                          className="p-4 border rounded-lg hover:shadow-md transition-shadow space-y-3"
-                        >
-                          <h4 className="font-semibold text-lg">{project.title}</h4>
-                          <p className="text-sm text-muted-foreground">{project.description}</p>
-                          <div className="flex flex-wrap gap-1">
-                            {project.technologies.map((tech) => (
-                              <Badge key={tech} variant="secondary" className="text-xs">
-                                {tech}
-                              </Badge>
-                            ))}
-                          </div>
-                          <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 pt-2">
-                            <div className="flex flex-wrap gap-2">
-                              <Badge variant="outline" className="text-xs">
-                                {project.category}
-                              </Badge>
-                            </div>
-                            <div className="flex flex-wrap gap-2">
-                              {project.links.demo && (
-                                <Button size="sm" asChild>
-                                  <a href={project.links.demo} target="_blank" rel="noopener noreferrer">
-                                    Live
-                                  </a>
-                                </Button>
-                              )}
-                              {project.links.github && (
-                                <Button size="sm" asChild>
-                                  <a href={project.links.github} target="_blank" rel="noopener noreferrer">
-                                    Code
-                                  </a>
-                                </Button>
-                              )}
-                              {project.links.presentation && (
-                                <Button size="sm" asChild>
-                                  <a href={project.links.presentation} target="_blank" rel="noopener noreferrer">
-                                    Slides
-                                  </a>
-                                </Button>
-                              )}
-                            </div>
-                          </div>
-                        </div>
-                      ))}
-                    </div>
-                  </ScrollArea>
-                </CardContent>
-              </Card>
-            </motion.div>
+
           </div>
 
           {/* Right Column */}
@@ -358,7 +291,7 @@ export function Dashboard() {
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
-                  {/* <ScrollArea className="h-96"> */}
+                  <ScrollArea className="h-72">
                     <div className="space-y-6 pr-4">
                       {educationData.map((edu) => (
                         <Card key={`${edu.institution}-${edu.duration}`} className="border-l-4 border-l-primary">
@@ -383,12 +316,12 @@ export function Dashboard() {
                         </Card>
                       ))}
                     </div>
-                  {/* </ScrollArea> */}
+                  </ScrollArea>
                 </CardContent>
               </Card>
             </motion.div>
 
-            
+
 
             {/* Technologies with Categories */}
             <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.6 }}>
@@ -401,26 +334,106 @@ export function Dashboard() {
                 </CardHeader>
                 <CardContent>
                   {/* <ScrollArea className="h-80"> */}
-                    <div className="space-y-4 pr-4">
-                      {techCategories.map((category) => (
-                        <div key={category.title} className="space-y-2">
-                          <h4 className="font-medium text-sm">{category.title}</h4>
-                          <div className="flex flex-wrap gap-1">
-                            {category.technologies.map((tech) => (
-                              <Badge key={tech} variant="secondary" className="text-xs">
-                                {tech}
-                              </Badge>
-                            ))}
-                          </div>
+                  <div className="space-y-4 pr-4">
+                    {techCategories.map((category) => (
+                      <div key={category.title} className="space-y-2">
+                        <h4 className="font-medium text-sm">{category.title}</h4>
+                        <div className="flex flex-wrap gap-1">
+                          {category.technologies.map((tech) => (
+                            <Badge key={tech} variant="secondary" className="text-xs">
+                              {tech}
+                            </Badge>
+                          ))}
                         </div>
-                      ))}
-                    </div>
+                      </div>
+                    ))}
+                  </div>
                   {/* </ScrollArea> */}
                 </CardContent>
               </Card>
             </motion.div>
           </div>
         </div>
+
+        {/* Projects Section - List View */}
+        <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.2 }}>
+          <Card className="border-none">
+
+            <CardHeader className="pl-1">
+              <CardTitle className="flex items-center gap-2">
+                <FolderOpen className="w-5 h-5" />
+                Projects
+              </CardTitle>
+            </CardHeader>
+            <CardContent className="p-0">
+              {/* <ScrollArea className="h-96"> */}
+              <div className="sm:columns-2 md:columns-2 lg:columns-3 gap-4">
+                {projects.map((project, index) => (
+                  <div
+                    key={project.title}
+                    className="break-inside-avoid mb-4"
+                  >
+
+                    <div className="relative overflow-hidden rounded-t-lg border border-b-0">
+                      <img
+                        src={project.image || "/placeholder.svg"}
+                        alt={project.title}
+                        className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105"
+                      />
+                    </div>
+
+                    <div
+                      className="p-4 border rounded-lg border-t-0 rounded-t-none hover:shadow-md transition-shadow space-y-3"
+                    >
+
+                      <h4 className="font-semibold text-lg">{project.title}</h4>
+                      <p className="text-sm text-muted-foreground">{project.description}</p>
+                      <div className="flex flex-wrap gap-1">
+                        {project.technologies.map((tech) => (
+                          <Badge key={tech} variant="secondary" className="text-xs">
+                            {tech}
+                          </Badge>
+                        ))}
+                      </div>
+                      <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 pt-2">
+                        <div className="flex flex-wrap gap-2">
+                          <Badge variant="outline" className="text-xs">
+                            {project.category}
+                          </Badge>
+                        </div>
+                        <div className="flex flex-wrap gap-2">
+                          {project.links.demo && (
+                            <Button size="sm" asChild>
+                              <a href={project.links.demo} target="_blank" rel="noopener noreferrer">
+                                Live
+                              </a>
+                            </Button>
+                          )}
+                          {project.links.github && (
+                            <Button size="sm" asChild>
+                              <a href={project.links.github} target="_blank" rel="noopener noreferrer">
+                                Code
+                              </a>
+                            </Button>
+                          )}
+                          {project.links.presentation && (
+                            <Button size="sm" asChild>
+                              <a href={project.links.presentation} target="_blank" rel="noopener noreferrer">
+                                Slides
+                              </a>
+                            </Button>
+                          )}
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+              {/* </ScrollArea> */}
+            </CardContent>
+          </Card>
+        </motion.div>
+
       </div>
     </div>
   )
